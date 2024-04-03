@@ -17,7 +17,13 @@
     <div class="background">
         <header>
             <div class="header_section">
-                <img src="./images/Hamburger_icon.svg.png">
+                <img src="./images/Hamburger_icon.svg.png" id="hamburger-icon">
+                <nav id="navbar" class="hidden">
+                    <ul>
+                        <li><a href="#players">Players</a></li>
+                        <li><a href="#main">Main</a></li>
+                    </ul>
+                </nav>
 
                 <h2>HBL PSL 9</h2>
                 <h1>Pakistan Super League Season 2024</h1>
@@ -28,8 +34,8 @@
                 <h4>@ahsannaseeem</h4>
 
         </header>
-        <main class="main_section">
-            <h1>Main Program</h1>
+        <main class="main_section" id="main">
+            <h1 class="heading">Main Program</h1>
             <div class="underline"></div>
             <div class="container">
                 <div class="row">
@@ -65,10 +71,23 @@
                 </div>
                 
             </div>
-            <button>JOIN HBL PSL 2024</button>
+            <button class="btn">JOIN HBL PSL 2024</button>
         </main>
+        <div class="player_section" id="players">
+            <h1 class="heading">Featured Players</h1>
+            <div class="underline"></div>
+            <div id="profile-container">
+            </div>
+            <button> More </button>
+        </div>
 
     </div>
+
+
+
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
